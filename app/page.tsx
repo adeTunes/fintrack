@@ -47,7 +47,7 @@ export default function Home() {
                   />
                 ))}
               </div>
-              <div className="flex text-[15px] text-primary-lightest/[62%] items-center gap-1">
+              <div className="flex text-sm sm:text-[15px] text-primary-lightest/[62%] items-center gap-1">
                 <span>
                   {users.length > NAMES_DISPLAYED
                     ? `${users

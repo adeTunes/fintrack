@@ -68,7 +68,7 @@ export const AppTable = ({ table }: { table: ReactTable<any> }) => {
                   return (
                     <td
                       color="#5E606A"
-                      className="border-t whitespace-nowrap border-t-primary-dark/20 py-[18px] text-[15px] leading-5"
+                      className="border-t whitespace-nowrap border-t-primary-dark/20 py-[18px] text-sm md:text-[15px] leading-5"
                       key={cell.id}
                     >
                       {flexRender(
