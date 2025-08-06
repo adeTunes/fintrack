@@ -1,6 +1,6 @@
-import React from "react";
+import React, { ComponentProps } from "react";
 
-export const Apps = () => {
+export const Apps = (props?: ComponentProps<"svg">) => {
   return (
     <svg
       width="24"
@@ -8,6 +8,7 @@ export const Apps = () => {
       viewBox="0 0 24 25"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         d="M10 3.25H3V10.25H10V3.25Z"

@@ -15,7 +15,7 @@ export const AppTable = ({ table }: { table: ReactTable<any> }) => {
                     style={{ width: header.getSize() }}
                     className={`
                       ${index === arr.length - 1 && "!pr-6"}
-                      ' text-primary-lightest/[62%] text-[13px] font-medium !pl-6'
+                      ' text-primary-lightest/[62%] text-[13px] font-medium'
                     `}
                     key={header.id}
                     colSpan={header.colSpan}
@@ -68,7 +68,7 @@ export const AppTable = ({ table }: { table: ReactTable<any> }) => {
                   return (
                     <td
                       color="#5E606A"
-                      className="border-t border-t-primary-dark/20 py-[18px] text-[15px] leading-5"
+                      className="border-t whitespace-nowrap border-t-primary-dark/20 py-[18px] text-[15px] leading-5"
                       key={cell.id}
                     >
                       {flexRender(

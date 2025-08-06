@@ -40,7 +40,7 @@ export const Dashboard = () => {
           <span
             key={tab}
             onClick={() => setCurrentTab(tab)}
-            className={`py-3 px-7 cursor-pointer font-medium ${
+            className={`py-3 md:px-7 px-3 text-sm md:text-[15px] cursor-pointer font-medium ${
               tab === currentTab
                 ? "text-primary border-b-[1.5px] border-b-primary-darker"
                 : "text-primary-lightest/[62%] hover:opacity-50 duration-200"
@@ -54,7 +54,7 @@ export const Dashboard = () => {
         <>
           <div className="py-3 flex flex-col gap-[18px]">
             <h3 className="text-xl font-bold">Summary</h3>
-            <div className="grid grid-cols-2 xl:grid-cols-4 gap-7">
+            <div className="grid grid-cols-2 max-[360px]:grid-cols-1 xl:grid-cols-4 gap-7">
               <StatsCard
                 title="Total Balance"
                 value={DashboardSummary.totalBalance}

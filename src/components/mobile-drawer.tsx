@@ -1,7 +1,8 @@
 "use client";
 
-import { navItems } from "../constants";
-import { Logo, Menu } from "../icons";
+import { images, navItems } from "../constants";
+import { Apps, Logo, Menu, Search } from "../icons";
+import { Avatar } from "./avatar";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
@@ -43,6 +44,11 @@ export const MobileDrawer = () => {
           >
             &times;
           </button>
+        </div>
+        <div className="hidden max-[390px]:flex items-center gap-7">
+          <Search />
+          <Apps />
+          <Avatar src={images.avatar3} size={40} />
         </div>
         <nav className="flex flex-col py-7">
           {navItems.map((item) => (

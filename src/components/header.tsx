@@ -7,7 +7,7 @@ import React from "react";
 export const Header = () => {
   return (
     <header className="flex items-center py-3 justify-between">
-      <div className="flex items-center gap-7">
+      <div className="flex items-center gap-2 md:gap-7">
         <MobileDrawer />
         <span className="flex items-center gap-1">
           <Logo />
@@ -17,8 +17,8 @@ export const Header = () => {
         </span>
       </div>
       <div className="flex items-center gap-7">
-        <Search />
-        <Apps />
+        <Search className="max-[390px]:hidden" />
+        <Apps className="max-[390px]:hidden" />
         <Avatar src={images.avatar3} size={40} />
       </div>
     </header>

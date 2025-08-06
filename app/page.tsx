@@ -8,7 +8,7 @@ export default function Home() {
   const NAMES_DISPLAYED = 3;
 
   return (
-    <main className="flex px-12 flex-col font-sans overflow-auto h-screen">
+    <main className="flex md:px-12 px-4 flex-col font-sans overflow-auto h-screen">
       <Header />
       <section className="flex flex-1 overflow-auto gap-12">
         <Sidebar />

@@ -10,20 +10,20 @@ interface StatsCardProps {
 
 export const StatsCard = (props: StatsCardProps) => {
   return (
-    <div className="p-7 bg-primary-lighter/[9%] rounded-[20px] flex flex-col gap-[18px]">
+    <div className="md:p-7 p-3 bg-primary-lighter/[9%] rounded-[20px] flex flex-col gap-3 md:gap-[18px]">
       <div className="flex items-center">
-        <h5 className="text-[17px] font-bold flex-1/2">{props.title}</h5>
+        <h5 className="md:text-[17px] text-sm font-bold flex-1/2">{props.title}</h5>
         <More
           size={24}
           className="hover:opacity-60 duration-200 cursor-pointer"
         />
       </div>
       <div className="flex flex-col gap-1">
-        <span className="text-[34px] leading-10 font-bold">
+        <span className="md:text-[34px] text-lg leading-10 font-bold">
           {props.isAmount ? "$" : ""}
           {props.value.toLocaleString("en-US")}
         </span>
-        <span className="text-primary-mild leading-3 text-[13px] font-medium">
+        <span className="text-primary-mild leading-3 text-xs md:text-[13px] font-medium">
           {props.percentageChange.toString().includes("-") ? "" : "+"}
           {props.percentageChange}%
         </span>
