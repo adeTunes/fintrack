@@ -42,7 +42,10 @@ export const AppTable = ({ table }: { table: ReactTable<any> }) => {
                           ),
 
                           desc: header.column.getCanSort() && (
-                            <ArrowDown color="#15272d9e" className="rotate-180" />
+                            <ArrowDown
+                              color="#15272d9e"
+                              className="rotate-180"
+                            />
                           ),
                         }[header.column.getIsSorted() as string] ??
                           (header.column.getCanSort() && (
@@ -58,7 +61,7 @@ export const AppTable = ({ table }: { table: ReactTable<any> }) => {
         </thead>
 
         <tbody>
-          {table.getRowModel().rows.map((row, idx, arr) => {
+          {table.getRowModel().rows.map((row) => {
             return (
               <tr className="" key={row.id}>
                 {row.getVisibleCells().map((cell) => {
