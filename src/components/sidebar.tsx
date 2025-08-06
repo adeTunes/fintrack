@@ -1,6 +1,7 @@
 "use client";
 
 import { navItems } from "../constants";
+import { MobileDrawer } from "./mobile-drawer";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -8,7 +9,7 @@ import React from "react";
 export const Sidebar = () => {
   const pathname = usePathname();
   return (
-    <aside className="max-w-[320px] flex flex-col py-7 w-[24%]">
+    <aside className="max-w-[320px] hidden md:flex flex-col py-7 w-[24%]">
       {navItems.map((item) => (
         <Link
           href={item.link}

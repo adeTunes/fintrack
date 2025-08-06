@@ -1,6 +1,6 @@
-import React from "react";
+import React, { ComponentProps } from "react";
 
-export function Menu() {
+export function Menu(props?: ComponentProps<"svg">) {
   return (
     <svg
       width="24"
@@ -8,6 +8,7 @@ export function Menu() {
       viewBox="0 0 24 25"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         d="M3 12.25H21M3 6.25H21M3 18.25H21"
